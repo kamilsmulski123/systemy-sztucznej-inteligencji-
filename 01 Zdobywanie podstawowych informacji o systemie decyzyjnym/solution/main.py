@@ -1,3 +1,5 @@
+import statistics
+
 DATA_DIR = "../data"
 INFO_FILENAME = "_info-data-discrete.txt"
 
@@ -14,13 +16,11 @@ def load_metadata():
     for line in lines:
         system = System(line.split()[0], line.split()[1], line.split()[2])
         system.load_data()
-        print("--------------------------------------------")
         system.print_info()
 
 
 class System:
     def __init__(self, name, nr_attr, nr_val):
-        print(f"Creating system {name}!")
         self.name = name
         self.number_of_attributes = int(nr_attr)
         self.number_of_values = nr_val
@@ -28,9 +28,15 @@ class System:
         self.columns = []
         for i in range(self.number_of_attributes):
             self.columns.append([])
+        self.decision_classes = []
 
     def print_info(self):
-        pass
+        print("---------------------")
+        print(f"Information about system {self.name}")
+        print(f"System contains {len(self.decision_classes)} decision classes.")
+        print(f"System contains {len(self.columns[0])} objects.")
+        for decision_class in self.decision_classes:
+            decision_class.print_info()
 
     def load_data(self):
         with open(DATA_DIR + "/" + self.name + ".txt") as file:
@@ -41,6 +47,15 @@ class System:
             for j in range(len(self.data[i])):
                 self.columns[j].append(self.data[i][j])
 
+        with open(DATA_DIR + "/" + self.name + "-type.txt") as file:
+            i = 0
+            for line in file:
+                name, type_value = line.split()
+                decision_class = DecisionClass(name, type_value)
+                decision_class.load_values(self.columns[i])
+                self.decision_classes.append(decision_class)
+                i += 1
+
 
 class DecisionClass:
     def __init__(self, name, type):
@@ -48,8 +63,26 @@ class DecisionClass:
         self.type = type
         self.values = []
 
-    def load_values(self, data, i):
-        pass
+    def load_values(self, data):
+        self.values = data
+        try:
+            if self.type == "n":
+                self.values = [float(i) for i in data]
+        except Exception as e:
+            self.type = "s"
+            print(f"Incorrect type set for attribute {self.name}. {str(e)} Using type 's.")
+
+
+    def print_info(self):
+        print(f"----Information about decision class {self.name}")
+        print(f"    Type: {self.type}")
+        if self.type == "n":
+            print(f"    Minimal value: {min(self.values)}")
+            print(f"    Maximal value: {max(self.values)}")
+        print(f"    Number of uniq values: {len(set(self.values))}")
+        print(f"    List of uniq values: {set(self.values)}")
+        if self.type == "n":
+            print(f"    Standard deviation: {statistics.stdev(self.values)}")
 
 
 if __name__ == '__main__':
