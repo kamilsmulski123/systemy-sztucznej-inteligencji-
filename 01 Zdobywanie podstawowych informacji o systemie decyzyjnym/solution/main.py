@@ -51,13 +51,13 @@ class System:
             i = 0
             for line in file:
                 name, type_value = line.split()
-                decision_class = DecisionClass(name, type_value)
-                decision_class.load_values(self.columns[i])
-                self.decision_classes.append(decision_class)
+                attribute = SystemAttribute(name, type_value)
+                attribute.load_values(self.columns[i])
+                self.decision_classes.append(attribute)
                 i += 1
 
 
-class DecisionClass:
+class SystemAttribute:
     def __init__(self, name, type):
         self.name = name
         self.type = type
@@ -74,7 +74,7 @@ class DecisionClass:
 
 
     def print_info(self):
-        print(f"----Information about decision class {self.name}")
+        print(f"----Information about attribute {self.name}")
         print(f"    Type: {self.type}")
         if self.type == "n":
             print(f"    Minimal value: {min(self.values)}")
