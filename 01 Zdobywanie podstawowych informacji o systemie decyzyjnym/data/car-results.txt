@@ -1,0 +1,28 @@
+---------------------
+Information about system car
+System contains 6 attributes.
+System contains 1728 objects.
+----Information about attribute a1
+    Type: s
+    Number of uniq values: 4
+    List of uniq values: {'low', 'med', 'vhigh', 'high'}
+----Information about attribute a2
+    Type: s
+    Number of uniq values: 4
+    List of uniq values: {'low', 'med', 'vhigh', 'high'}
+----Information about attribute a3
+    Type: s
+    Number of uniq values: 4
+    List of uniq values: {'2', '3', '5more', '4'}
+----Information about attribute a4
+    Type: s
+    Number of uniq values: 3
+    List of uniq values: {'2', '4', 'more'}
+----Information about attribute a5
+    Type: s
+    Number of uniq values: 3
+    List of uniq values: {'small', 'med', 'big'}
+----Information about attribute a6
+    Type: s
+    Number of uniq values: 3
+    List of uniq values: {'low', 'med', 'high'}

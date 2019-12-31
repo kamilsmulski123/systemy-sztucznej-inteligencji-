@@ -1,0 +1,92 @@
+---------------------
+Information about system SPECT-all-modif
+System contains 22 attributes.
+System contains 267 objects.
+----Information about attribute a1
+    Type: s
+    Number of uniq values: 2
+    List of uniq values: {'1', '0'}
+----Information about attribute a2
+    Type: s
+    Number of uniq values: 2
+    List of uniq values: {'1', '0'}
+----Information about attribute a3
+    Type: s
+    Number of uniq values: 2
+    List of uniq values: {'1', '0'}
+----Information about attribute a4
+    Type: s
+    Number of uniq values: 2
+    List of uniq values: {'1', '0'}
+----Information about attribute a5
+    Type: s
+    Number of uniq values: 2
+    List of uniq values: {'1', '0'}
+----Information about attribute a6
+    Type: s
+    Number of uniq values: 2
+    List of uniq values: {'1', '0'}
+----Information about attribute a7
+    Type: s
+    Number of uniq values: 2
+    List of uniq values: {'1', '0'}
+----Information about attribute a8
+    Type: s
+    Number of uniq values: 2
+    List of uniq values: {'1', '0'}
+----Information about attribute a9
+    Type: s
+    Number of uniq values: 2
+    List of uniq values: {'1', '0'}
+----Information about attribute a10
+    Type: s
+    Number of uniq values: 2
+    List of uniq values: {'1', '0'}
+----Information about attribute a11
+    Type: s
+    Number of uniq values: 2
+    List of uniq values: {'1', '0'}
+----Information about attribute a12
+    Type: s
+    Number of uniq values: 2
+    List of uniq values: {'1', '0'}
+----Information about attribute a13
+    Type: s
+    Number of uniq values: 2
+    List of uniq values: {'1', '0'}
+----Information about attribute a14
+    Type: s
+    Number of uniq values: 2
+    List of uniq values: {'1', '0'}
+----Information about attribute a15
+    Type: s
+    Number of uniq values: 2
+    List of uniq values: {'1', '0'}
+----Information about attribute a16
+    Type: s
+    Number of uniq values: 2
+    List of uniq values: {'1', '0'}
+----Information about attribute a17
+    Type: s
+    Number of uniq values: 2
+    List of uniq values: {'1', '0'}
+----Information about attribute a18
+    Type: s
+    Number of uniq values: 2
+    List of uniq values: {'1', '0'}
+----Information about attribute a19
+    Type: s
+    Number of uniq values: 2
+    List of uniq values: {'1', '0'}
+----Information about attribute a20
+    Type: s
+    Number of uniq values: 2
+    List of uniq values: {'1', '0'}
+----Information about attribute a21
+    Type: s
+    Number of uniq values: 2
+    List of uniq values: {'1', '0'}
+----Information about attribute a22
+    Type: s
+    Number of uniq values: 2
+    List of uniq values: {'1', '0'}

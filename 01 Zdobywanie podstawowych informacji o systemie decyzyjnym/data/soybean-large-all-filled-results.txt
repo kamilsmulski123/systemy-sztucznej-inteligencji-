@@ -1,0 +1,147 @@
+---------------------
+Information about system soybean-large-all-filled
+System contains 35 attributes.
+System contains 683 objects.
+----Information about attribute a1
+    Type: n
+    Minimal value: 0.0
+    Maximal value: 2.0
+    Number of uniq values: 3
+    List of uniq values: {0.0, 1.0, 2.0}
+    Standard deviation: 0.43033554780071315
+----Information about attribute a2
+    Type: s
+    Number of uniq values: 7
+    List of uniq values: {'0', '5', '2', '3', '4', '1', '6'}
+----Information about attribute a3
+    Type: s
+    Number of uniq values: 2
+    List of uniq values: {'1', '0'}
+----Information about attribute a4
+    Type: s
+    Number of uniq values: 3
+    List of uniq values: {'1', '0', '2'}
+----Information about attribute a5
+    Type: s
+    Number of uniq values: 3
+    List of uniq values: {'1', '0', '2'}
+----Information about attribute a6
+    Type: s
+    Number of uniq values: 2
+    List of uniq values: {'1', '0'}
+----Information about attribute a7
+    Type: s
+    Number of uniq values: 4
+    List of uniq values: {'1', '0', '2', '3'}
+----Information about attribute a8
+    Type: s
+    Number of uniq values: 4
+    List of uniq values: {'1', '0', '2', '3'}
+----Information about attribute a9
+    Type: s
+    Number of uniq values: 3
+    List of uniq values: {'1', '0', '2'}
+----Information about attribute a10
+    Type: s
+    Number of uniq values: 3
+    List of uniq values: {'1', '0', '2'}
+----Information about attribute a11
+    Type: s
+    Number of uniq values: 3
+    List of uniq values: {'1', '0', '2'}
+----Information about attribute a12
+    Type: s
+    Number of uniq values: 2
+    List of uniq values: {'1', '0'}
+----Information about attribute a13
+    Type: s
+    Number of uniq values: 2
+    List of uniq values: {'1', '0'}
+----Information about attribute a14
+    Type: s
+    Number of uniq values: 3
+    List of uniq values: {'1', '0', '2'}
+----Information about attribute a15
+    Type: s
+    Number of uniq values: 3
+    List of uniq values: {'1', '0', '2'}
+----Information about attribute a16
+    Type: s
+    Number of uniq values: 3
+    List of uniq values: {'1', '0', '2'}
+----Information about attribute a17
+    Type: s
+    Number of uniq values: 2
+    List of uniq values: {'1', '0'}
+----Information about attribute a18
+    Type: s
+    Number of uniq values: 2
+    List of uniq values: {'1', '0'}
+----Information about attribute a19
+    Type: s
+    Number of uniq values: 3
+    List of uniq values: {'1', '0', '2'}
+----Information about attribute a20
+    Type: s
+    Number of uniq values: 2
+    List of uniq values: {'1', '0'}
+----Information about attribute a21
+    Type: s
+    Number of uniq values: 2
+    List of uniq values: {'1', '0'}
+----Information about attribute a22
+    Type: s
+    Number of uniq values: 4
+    List of uniq values: {'1', '0', '2', '3'}
+----Information about attribute a23
+    Type: s
+    Number of uniq values: 4
+    List of uniq values: {'1', '0', '2', '3'}
+----Information about attribute a24
+    Type: s
+    Number of uniq values: 2
+    List of uniq values: {'1', '0'}
+----Information about attribute a25
+    Type: s
+    Number of uniq values: 3
+    List of uniq values: {'1', '0', '2'}
+----Information about attribute a26
+    Type: s
+    Number of uniq values: 2
+    List of uniq values: {'1', '0'}
+----Information about attribute a27
+    Type: s
+    Number of uniq values: 3
+    List of uniq values: {'1', '0', '2'}
+----Information about attribute a28
+    Type: s
+    Number of uniq values: 2
+    List of uniq values: {'1', '0'}
+----Information about attribute a29
+    Type: s
+    Number of uniq values: 4
+    List of uniq values: {'1', '0', '2', '3'}
+----Information about attribute a30
+    Type: s
+    Number of uniq values: 4
+    List of uniq values: {'1', '0', '2', '4'}
+----Information about attribute a31
+    Type: s
+    Number of uniq values: 2
+    List of uniq values: {'1', '0'}
+----Information about attribute a32
+    Type: s
+    Number of uniq values: 2
+    List of uniq values: {'1', '0'}
+----Information about attribute a33
+    Type: s
+    Number of uniq values: 2
+    List of uniq values: {'1', '0'}
+----Information about attribute a34
+    Type: s
+    Number of uniq values: 2
+    List of uniq values: {'1', '0'}
+----Information about attribute a35
+    Type: s
+    Number of uniq values: 2
+    List of uniq values: {'1', '0'}

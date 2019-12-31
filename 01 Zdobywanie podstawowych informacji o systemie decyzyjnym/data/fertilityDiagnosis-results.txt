@@ -1,0 +1,46 @@
+---------------------
+Information about system fertilityDiagnosis
+System contains 9 attributes.
+System contains 100 objects.
+----Information about attribute a1
+    Type: s
+    Number of uniq values: 4
+    List of uniq values: {'1', '-1', '-0.33', '0.33'}
+----Information about attribute a2
+    Type: n
+    Minimal value: 0.5
+    Maximal value: 1.0
+    Number of uniq values: 18
+    List of uniq values: {0.69, 0.94, 0.67, 0.5, 0.75, 1.0, 0.64, 0.61, 0.78, 0.81, 0.56, 0.92, 0.86, 0.83, 0.53, 0.72, 0.58, 0.89}
+    Standard deviation: 0.1213185139135071
+----Information about attribute a3
+    Type: s
+    Number of uniq values: 2
+    List of uniq values: {'1', '0'}
+----Information about attribute a4
+    Type: s
+    Number of uniq values: 2
+    List of uniq values: {'1', '0'}
+----Information about attribute a5
+    Type: s
+    Number of uniq values: 2
+    List of uniq values: {'1', '0'}
+----Information about attribute a6
+    Type: s
+    Number of uniq values: 3
+    List of uniq values: {'1', '0', '-1'}
+----Information about attribute a7
+    Type: s
+    Number of uniq values: 5
+    List of uniq values: {'0.8', '0.2', '0.6', '0.4', '1'}
+----Information about attribute a8
+    Type: s
+    Number of uniq values: 3
+    List of uniq values: {'1', '0', '-1'}
+----Information about attribute a9
+    Type: n
+    Minimal value: 0.06
+    Maximal value: 1.0
+    Number of uniq values: 14
+    List of uniq values: {0.88, 0.5, 0.38, 0.31, 0.44, 0.25, 0.13, 0.63, 0.19, 0.75, 1.0, 0.56, 0.47, 0.06}
+    Standard deviation: 0.1863952572336322

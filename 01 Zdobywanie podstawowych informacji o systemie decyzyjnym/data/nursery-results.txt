@@ -1,0 +1,36 @@
+---------------------
+Information about system nursery
+System contains 8 attributes.
+System contains 12961 objects.
+----Information about attribute a1
+    Type: s
+    Number of uniq values: 4
+    List of uniq values: {'', 'great_pret', 'usual', 'pretentious'}
+----Information about attribute a2
+    Type: s
+    Number of uniq values: 5
+    List of uniq values: {'less_proper', 'improper', 'critical', 'very_crit', 'proper'}
+----Information about attribute a3
+    Type: s
+    Number of uniq values: 4
+    List of uniq values: {'complete', 'incomplete', 'completed', 'foster'}
+----Information about attribute a4
+    Type: s
+    Number of uniq values: 4
+    List of uniq values: {'1', '2', '3', 'more'}
+----Information about attribute a5
+    Type: s
+    Number of uniq values: 3
+    List of uniq values: {'less_conv', 'convenient', 'critical'}
+----Information about attribute a6
+    Type: s
+    Number of uniq values: 2
+    List of uniq values: {'inconv', 'convenient'}
+----Information about attribute a7
+    Type: s
+    Number of uniq values: 3
+    List of uniq values: {'slightly_prob', 'nonprob', 'problematic'}
+----Information about attribute a8
+    Type: s
+    Number of uniq values: 3
+    List of uniq values: {'recommended', 'priority', 'not_recom'}

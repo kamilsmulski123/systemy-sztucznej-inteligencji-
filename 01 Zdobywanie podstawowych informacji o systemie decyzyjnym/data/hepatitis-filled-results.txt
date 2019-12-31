@@ -1,0 +1,98 @@
+---------------------
+Information about system hepatitis-filled
+System contains 19 attributes.
+System contains 155 objects.
+----Information about attribute a1
+    Type: s
+    Number of uniq values: 2
+    List of uniq values: {'1', '2'}
+----Information about attribute a2
+    Type: n
+    Minimal value: 7.0
+    Maximal value: 78.0
+    Number of uniq values: 49
+    List of uniq values: {7.0, 20.0, 22.0, 23.0, 24.0, 25.0, 26.0, 27.0, 28.0, 30.0, 31.0, 32.0, 33.0, 34.0, 35.0, 36.0, 37.0, 38.0, 39.0, 40.0, 41.0, 42.0, 43.0, 44.0, 45.0, 46.0, 47.0, 48.0, 49.0, 50.0, 51.0, 52.0, 53.0, 54.0, 56.0, 57.0, 58.0, 59.0, 60.0, 61.0, 62.0, 64.0, 65.0, 66.0, 67.0, 69.0, 70.0, 72.0, 78.0}
+    Standard deviation: 12.565878349773195
+----Information about attribute a3
+    Type: s
+    Number of uniq values: 2
+    List of uniq values: {'1', '2'}
+----Information about attribute a4
+    Type: s
+    Number of uniq values: 2
+    List of uniq values: {'1', '2'}
+----Information about attribute a5
+    Type: s
+    Number of uniq values: 2
+    List of uniq values: {'1', '2'}
+----Information about attribute a6
+    Type: s
+    Number of uniq values: 2
+    List of uniq values: {'1', '2'}
+----Information about attribute a7
+    Type: s
+    Number of uniq values: 2
+    List of uniq values: {'1', '2'}
+----Information about attribute a8
+    Type: s
+    Number of uniq values: 2
+    List of uniq values: {'1', '2'}
+----Information about attribute a9
+    Type: s
+    Number of uniq values: 2
+    List of uniq values: {'1', '2'}
+----Information about attribute a10
+    Type: s
+    Number of uniq values: 2
+    List of uniq values: {'1', '2'}
+----Information about attribute a11
+    Type: s
+    Number of uniq values: 2
+    List of uniq values: {'1', '2'}
+----Information about attribute a12
+    Type: s
+    Number of uniq values: 2
+    List of uniq values: {'1', '2'}
+----Information about attribute a13
+    Type: s
+    Number of uniq values: 2
+    List of uniq values: {'1', '2'}
+----Information about attribute a14
+    Type: s
+    Number of uniq values: 2
+    List of uniq values: {'1', '2'}
+----Information about attribute a15
+    Type: n
+    Minimal value: 0.3
+    Maximal value: 8.0
+    Number of uniq values: 34
+    List of uniq values: {0.9, 1.0, 2.8, 1.3, 0.7, 2.2, 2.0, 1.2, 0.6, 0.4, 1.4, 2.3, 0.5, 4.6, 1.5, 2.5, 3.5, 3.0, 4.1, 7.6, 1.6, 1.1, 8.0, 1.7, 0.3, 3.2, 0.8, 4.8, 1.8, 4.2, 1.9, 2.4, 2.9, 3.9}
+    Standard deviation: 1.2005106440392825
+----Information about attribute a16
+    Type: n
+    Minimal value: 26.0
+    Maximal value: 295.0
+    Number of uniq values: 83
+    List of uniq values: {26.0, 30.0, 34.0, 40.0, 44.0, 45.0, 46.0, 48.0, 50.0, 52.0, 53.0, 55.0, 56.0, 57.0, 58.0, 59.0, 60.0, 62.0, 63.0, 65.0, 67.0, 68.0, 70.0, 71.0, 72.0, 74.0, 75.0, 76.0, 78.0, 80.0, 81.0, 82.0, 84.0, 85.0, 86.0, 89.0, 90.0, 92.0, 95.0, 96.0, 100.0, 102.0, 103.0, 107.0, 109.0, 110.0, 114.0, 115.0, 118.0, 119.0, 120.0, 123.0, 125.0, 126.0, 127.0, 130.0, 133.0, 135.0, 138.0, 139.0, 141.0, 147.0, 150.0, 155.0, 158.0, 160.0, 164.0, 165.0, 166.0, 167.0, 168.0, 175.0, 179.0, 180.0, 181.0, 191.0, 194.0, 215.0, 230.0, 243.0, 256.0, 280.0, 295.0}
+    Standard deviation: 61.28089330593746
+----Information about attribute a17
+    Type: n
+    Minimal value: 14.0
+    Maximal value: 648.0
+    Number of uniq values: 84
+    List of uniq values: {14.0, 15.0, 16.0, 528.0, 18.0, 19.0, 20.0, 23.0, 24.0, 25.0, 28.0, 29.0, 30.0, 31.0, 32.0, 33.0, 34.0, 38.0, 39.0, 40.0, 42.0, 43.0, 44.0, 45.0, 46.0, 48.0, 49.0, 52.0, 53.0, 54.0, 55.0, 58.0, 59.0, 60.0, 63.0, 64.0, 65.0, 68.0, 69.0, 70.0, 75.0, 78.0, 80.0, 81.0, 86.0, 89.0, 90.0, 92.0, 98.0, 100.0, 101.0, 110.0, 114.0, 117.0, 118.0, 120.0, 123.0, 128.0, 648.0, 136.0, 140.0, 142.0, 144.0, 145.0, 150.0, 152.0, 153.0, 156.0, 157.0, 166.0, 173.0, 181.0, 182.0, 200.0, 224.0, 225.0, 227.0, 231.0, 242.0, 249.0, 269.0, 271.0, 278.0, 420.0}
+    Standard deviation: 88.85795917222632
+----Information about attribute a18
+    Type: n
+    Minimal value: 2.1
+    Maximal value: 6.4
+    Number of uniq values: 29
+    List of uniq values: {2.9, 3.3, 3.5, 4.0, 4.4, 3.9, 3.7, 4.9, 4.3, 4.1, 4.2, 4.7, 5.0, 6.4, 3.0, 4.6, 4.5, 2.6, 2.1, 3.1, 3.6, 2.7, 2.8, 2.2, 3.8, 4.8, 5.3, 2.4, 3.4}
+    Standard deviation: 0.6256505621273258
+----Information about attribute a19
+    Type: n
+    Minimal value: 0.0
+    Maximal value: 100.0
+    Number of uniq values: 44
+    List of uniq values: {0.0, 21.0, 23.0, 29.0, 30.0, 31.0, 32.0, 35.0, 36.0, 38.0, 39.0, 40.0, 41.0, 42.0, 43.0, 46.0, 47.0, 48.0, 50.0, 51.0, 52.0, 54.0, 56.0, 57.0, 58.0, 60.0, 62.0, 63.0, 64.0, 66.0, 67.0, 70.0, 72.0, 73.0, 74.0, 75.0, 76.0, 77.0, 78.0, 80.0, 84.0, 85.0, 90.0, 100.0}
+    Standard deviation: 27.876249664361445

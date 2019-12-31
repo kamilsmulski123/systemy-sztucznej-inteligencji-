@@ -1,0 +1,92 @@
+---------------------
+Information about system mushroom-modified-filled
+System contains 22 attributes.
+System contains 8124 objects.
+----Information about attribute a1
+    Type: s
+    Number of uniq values: 7
+    List of uniq values: {'l', 'p', 'd', 'w', 'm', 'g', 'u'}
+----Information about attribute a2
+    Type: s
+    Number of uniq values: 6
+    List of uniq values: {'f', 'x', 'k', 's', 'c', 'b'}
+----Information about attribute a3
+    Type: s
+    Number of uniq values: 4
+    List of uniq values: {'y', 's', 'f', 'g'}
+----Information about attribute a4
+    Type: s
+    Number of uniq values: 10
+    List of uniq values: {'n', 'r', 'p', 'e', 'c', 'b', 'y', 'w', 'g', 'u'}
+----Information about attribute a5
+    Type: s
+    Number of uniq values: 2
+    List of uniq values: {'t', 'f'}
+----Information about attribute a6
+    Type: s
+    Number of uniq values: 9
+    List of uniq values: {'l', 'f', 'n', 'p', 's', 'a', 'm', 'y', 'c'}
+----Information about attribute a7
+    Type: s
+    Number of uniq values: 2
+    List of uniq values: {'f', 'a'}
+----Information about attribute a8
+    Type: s
+    Number of uniq values: 2
+    List of uniq values: {'w', 'c'}
+----Information about attribute a9
+    Type: s
+    Number of uniq values: 2
+    List of uniq values: {'n', 'b'}
+----Information about attribute a10
+    Type: s
+    Number of uniq values: 12
+    List of uniq values: {'k', 'n', 'r', 'p', 'e', 'o', 'h', 'b', 'y', 'w', 'g', 'u'}
+----Information about attribute a11
+    Type: s
+    Number of uniq values: 2
+    List of uniq values: {'t', 'e'}
+----Information about attribute a12
+    Type: s
+    Number of uniq values: 4
+    List of uniq values: {'r', 'e', 'b', 'c'}
+----Information about attribute a13
+    Type: s
+    Number of uniq values: 4
+    List of uniq values: {'y', 'f', 's', 'k'}
+----Information about attribute a14
+    Type: s
+    Number of uniq values: 4
+    List of uniq values: {'f', 'k', 's', 'y'}
+----Information about attribute a15
+    Type: s
+    Number of uniq values: 9
+    List of uniq values: {'n', 'p', 'e', 'y', 'c', 'b', 'o', 'w', 'g'}
+----Information about attribute a16
+    Type: s
+    Number of uniq values: 9
+    List of uniq values: {'n', 'p', 'e', 'g', 'o', 'c', 'y', 'w', 'b'}
+----Information about attribute a17
+    Type: s
+    Number of uniq values: 1
+    List of uniq values: {'p'}
+----Information about attribute a18
+    Type: s
+    Number of uniq values: 4
+    List of uniq values: {'o', 'w', 'y', 'n'}
+----Information about attribute a19
+    Type: s
+    Number of uniq values: 3
+    List of uniq values: {'t', 'o', 'n'}
+----Information about attribute a20
+    Type: s
+    Number of uniq values: 5
+    List of uniq values: {'l', 'f', 'n', 'p', 'e'}
+----Information about attribute a21
+    Type: s
+    Number of uniq values: 9
+    List of uniq values: {'k', 'n', 'r', 'y', 'h', 'o', 'w', 'b', 'u'}
+----Information about attribute a22
+    Type: s
+    Number of uniq values: 6
+    List of uniq values: {'n', 's', 'v', 'a', 'y', 'c'}
