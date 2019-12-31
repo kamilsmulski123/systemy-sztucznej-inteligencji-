@@ -16,7 +16,7 @@ def load_metadata():
     for line in lines:
         system = System(line.split()[0], line.split()[1], line.split()[2])
         system.load_data()
-        system.print_info()
+        system.print_info(to_file=True)
 
 
 class System:
@@ -30,9 +30,13 @@ class System:
             self.columns.append([])
         self.attributes = []
 
-    def print_info(self):
-        for line in self.get_info():
-            print(line)
+    def print_info(self, to_file=False):
+        if not to_file:
+            for line in self.get_info():
+                print(line)
+        else:
+            with open(DATA_DIR + "/" + self.name + "-results.txt", "w") as file:
+                file.write("\n".join(self.get_info()))
 
     def get_info(self):
         info_lines = list()
