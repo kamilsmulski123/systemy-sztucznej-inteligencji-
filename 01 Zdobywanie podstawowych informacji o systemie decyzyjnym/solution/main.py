@@ -28,15 +28,15 @@ class System:
         self.columns = []
         for i in range(self.number_of_attributes):
             self.columns.append([])
-        self.decision_classes = []
+        self.attributes = []
 
     def print_info(self):
         print("---------------------")
         print(f"Information about system {self.name}")
-        print(f"System contains {len(self.decision_classes)} decision classes.")
+        print(f"System contains {len(self.attributes)} attributes.")
         print(f"System contains {len(self.columns[0])} objects.")
-        for decision_class in self.decision_classes:
-            decision_class.print_info()
+        for attribute in self.attributes:
+            attribute.print_info()
 
     def load_data(self):
         with open(DATA_DIR + "/" + self.name + ".txt") as file:
@@ -53,7 +53,7 @@ class System:
                 name, type_value = line.split()
                 attribute = SystemAttribute(name, type_value)
                 attribute.load_values(self.columns[i])
-                self.decision_classes.append(attribute)
+                self.attributes.append(attribute)
                 i += 1
 
 
