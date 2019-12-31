@@ -31,12 +31,18 @@ class System:
         self.attributes = []
 
     def print_info(self):
-        print("---------------------")
-        print(f"Information about system {self.name}")
-        print(f"System contains {len(self.attributes)} attributes.")
-        print(f"System contains {len(self.columns[0])} objects.")
+        for line in self.get_info():
+            print(line)
+
+    def get_info(self):
+        info_lines = list()
+        info_lines.append("---------------------")
+        info_lines.append(f"Information about system {self.name}")
+        info_lines.append(f"System contains {len(self.attributes)} attributes.")
+        info_lines.append(f"System contains {len(self.columns[0])} objects.")
         for attribute in self.attributes:
-            attribute.print_info()
+            info_lines.extend(attribute.get_info())
+        return info_lines
 
     def load_data(self):
         with open(DATA_DIR + "/" + self.name + ".txt") as file:
@@ -72,11 +78,6 @@ class SystemAttribute:
             self.type = "s"
             print(f"Incorrect type set for attribute {self.name}. {str(e)} Using type 's.")
 
-
-    def print_info(self):
-        for line in self.get_info():
-            print(line)
-
     def get_info(self):
         info_lines = []
         info_lines.append(f"----Information about attribute {self.name}")
@@ -89,6 +90,7 @@ class SystemAttribute:
         if self.type == "n":
             info_lines.append(f"    Standard deviation: {statistics.stdev(self.values)}")
         return info_lines
+
 
 if __name__ == '__main__':
     main()
