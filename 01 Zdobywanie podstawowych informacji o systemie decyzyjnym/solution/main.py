@@ -74,16 +74,21 @@ class SystemAttribute:
 
 
     def print_info(self):
-        print(f"----Information about attribute {self.name}")
-        print(f"    Type: {self.type}")
-        if self.type == "n":
-            print(f"    Minimal value: {min(self.values)}")
-            print(f"    Maximal value: {max(self.values)}")
-        print(f"    Number of uniq values: {len(set(self.values))}")
-        print(f"    List of uniq values: {set(self.values)}")
-        if self.type == "n":
-            print(f"    Standard deviation: {statistics.stdev(self.values)}")
+        for line in self.get_info():
+            print(line)
 
+    def get_info(self):
+        info_lines = []
+        info_lines.append(f"----Information about attribute {self.name}")
+        info_lines.append(f"    Type: {self.type}")
+        if self.type == "n":
+            info_lines.append(f"    Minimal value: {min(self.values)}")
+            info_lines.append(f"    Maximal value: {max(self.values)}")
+        info_lines.append(f"    Number of uniq values: {len(set(self.values))}")
+        info_lines.append(f"    List of uniq values: {set(self.values)}")
+        if self.type == "n":
+            info_lines.append(f"    Standard deviation: {statistics.stdev(self.values)}")
+        return info_lines
 
 if __name__ == '__main__':
     main()
