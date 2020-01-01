@@ -9,6 +9,7 @@ def main():
     system_trn = System("australian_TRN", DATA_DIR + "/australian_TRN.txt")
     classifier = NaiveBayesClassifier(system_tst, system_trn)
     classifier.compute()
+    classifier.dump_classified_system(DATA_DIR + "/dec_bayes.txt")
 
 
 class System:
@@ -62,6 +63,16 @@ class NaiveBayesClassifier:
                     count_all += 1
             coefficients[decision_class] = count_same_value / count_all
         obj.classification = max(coefficients, key=coefficients.get)  # todo implement randomness
+
+    def dump_classified_system(self, path):
+        content = ""
+        for obj in self.tst.objects:
+            line = " ".join([str(v) for v in obj.values])
+            line += " " + str(obj.classification)
+            line += "\n"
+            content += line
+        with open(path, "w") as file:
+            file.write(content)
 
 
 if __name__ == '__main__':
