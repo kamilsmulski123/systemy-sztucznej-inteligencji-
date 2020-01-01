@@ -10,6 +10,7 @@ def main():
     classifier = NaiveBayesClassifier(system_tst, system_trn)
     classifier.compute()
     classifier.dump_classified_system(DATA_DIR + "/dec_bayes.txt")
+    classifier.dump_accuracy(DATA_DIR + "/acc_bayes.txt")
 
 
 class System:
@@ -35,13 +36,14 @@ class SystemObject:
         self.values = numbers[:-1]
         self.decision = numbers[-1]
         self.classification = None
-        self.global_accuracy = None
 
 
 class NaiveBayesClassifier:
     def __init__(self, tst, trn):
         self.tst = tst
         self.trn = trn
+        self.global_accuracy = None
+        self.balanced_accuracy = None
 
     def compute(self):
         self.load_data()
@@ -76,6 +78,12 @@ class NaiveBayesClassifier:
         with open(path, "w") as file:
             file.write(content)
 
+    def dump_accuracy(self, path):
+        with open(path, "w") as file:
+            file.write(str(self.global_accuracy))
+            file.write(" ")
+            file.write(str(self.balanced_accuracy))
+
     def compute_accuracy(self):
         all_objects = len(self.tst.objects)
         correctly_classified = len([
@@ -83,6 +91,18 @@ class NaiveBayesClassifier:
             if o.decision == o.classification
         ])
         self.global_accuracy = correctly_classified / all_objects
+
+        partial_accuracies = []
+        for decision_class in self.tst.decision_classes:
+            all_objects_in_class = len(self.tst.decision_classes[decision_class])
+            correctly_classified_in_class = len([
+                o for o in self.tst.decision_classes[decision_class]
+                if o.decision == o.classification
+            ])
+            accuracy = correctly_classified_in_class / all_objects_in_class
+            partial_accuracies.append(accuracy)
+        no_decision_classes = len(self.tst.decision_classes)
+        self.balanced_accuracy = sum(partial_accuracies) / no_decision_classes
 
 
 if __name__ == '__main__':
