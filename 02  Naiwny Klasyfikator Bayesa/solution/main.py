@@ -35,6 +35,7 @@ class SystemObject:
         self.values = numbers[:-1]
         self.decision = numbers[-1]
         self.classification = None
+        self.global_accuracy = None
 
 
 class NaiveBayesClassifier:
@@ -46,6 +47,7 @@ class NaiveBayesClassifier:
         self.load_data()
         for obj in self.tst.objects:
             self.classify(obj)
+        self.compute_accuracy()
 
     def load_data(self):
         self.tst.load_data()
@@ -73,6 +75,14 @@ class NaiveBayesClassifier:
             content += line
         with open(path, "w") as file:
             file.write(content)
+
+    def compute_accuracy(self):
+        all_objects = len(self.tst.objects)
+        correctly_classified = len([
+            o for o in self.tst.objects
+            if o.decision == o.classification
+        ])
+        self.global_accuracy = correctly_classified / all_objects
 
 
 if __name__ == '__main__':
