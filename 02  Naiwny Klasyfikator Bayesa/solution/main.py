@@ -1,4 +1,4 @@
-import statistics
+from collections import defaultdict
 
 DATA_DIR = "../data"
 INFO_FILENAME = "_info-data-discrete.txt"
@@ -16,10 +16,13 @@ class System:
     def __init__(self, name):
         self.name = name
         self.objects = []
+        self.decision_classes = defaultdict(list)
 
     def load_data(self):
         for line in open(DATA_DIR + "/" + self.name + ".txt"):
-            self.objects.append(SystemObject(line.strip()))
+            system_object = SystemObject(line.strip())
+            self.objects.append(system_object)
+            self.decision_classes[system_object.decision].append(system_object)
 
 
 class SystemObject:
