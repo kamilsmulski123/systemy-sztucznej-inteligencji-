@@ -33,6 +33,7 @@ class SystemObject:
         numbers = [float(v) for v in text_values]
         self.values = numbers[:-1]
         self.decision = numbers[-1]
+        self.classification = None
 
 
 class NaiveBayesClassifier:
@@ -42,10 +43,25 @@ class NaiveBayesClassifier:
 
     def compute(self):
         self.load_data()
+        for obj in self.tst.objects:
+            self.classify(obj)
 
     def load_data(self):
         self.tst.load_data()
         self.trn.load_data()
+
+    def classify(self, obj):
+        coefficients = {}
+        for decision_class in self.trn.decision_classes:
+            count_same_value = 0.0
+            count_all = 0.0
+            for i, value in enumerate(obj.values):
+                for trn_obj in self.trn.decision_classes[decision_class]:
+                    if trn_obj.values[i] == value:
+                        count_same_value += 1
+                    count_all += 1
+            coefficients[decision_class] = count_same_value / count_all
+        obj.classification = max(coefficients, key=coefficients.get)  # todo implement randomness
 
 
 if __name__ == '__main__':

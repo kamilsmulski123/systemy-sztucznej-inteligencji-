@@ -1,6 +1,6 @@
 from tempfile import NamedTemporaryFile
 
-from main import System
+from main import System, NaiveBayesClassifier
 
 tst_content = [
     (2, 4, 2, 1, 4),
@@ -42,8 +42,8 @@ with open(trn_file.name, "w") as file:
 tst = System("tst", tst_file.name)
 trn = System("trn", trn_file.name)
 
-tst.load_data()
-trn.load_data()
+classifier = NaiveBayesClassifier(tst, trn)
+classifier.compute()
 
 print(tst.decision_classes)
 print(trn.decision_classes)
