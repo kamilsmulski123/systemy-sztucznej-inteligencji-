@@ -7,8 +7,8 @@ INFO_FILENAME = "_info-data-discrete.txt"
 def main():
     system_tst = System("australian_TST")
     system_trn = System("australian_TRN")
-    system_tst.load_data()
-    system_trn.load_data()
+    classifier = NaiveBayesClassifier(system_tst, system_trn)
+    classifier.compute()
 
 
 class System:
@@ -29,6 +29,19 @@ class SystemObject:
         numbers = [float(v) for v in text_values]
         self.values = numbers[:-1]
         self.decision = numbers[-1]
+
+
+class NaiveBayesClassifier:
+    def __init__(self, tst, trn):
+        self.tst = tst
+        self.trn = trn
+
+    def compute(self):
+        self.load_data()
+
+    def load_data(self):
+        self.tst.load_data()
+        self.trn.load_data()
 
 
 if __name__ == '__main__':
