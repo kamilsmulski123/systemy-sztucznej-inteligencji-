@@ -5,21 +5,22 @@ INFO_FILENAME = "_info-data-discrete.txt"
 
 
 def main():
-    system_tst = System("australian_TST")
-    system_trn = System("australian_TRN")
+    system_tst = System("australian_TST", DATA_DIR + "/australian_TST.txt")
+    system_trn = System("australian_TRN", DATA_DIR + "/australian_TRN.txt")
     classifier = NaiveBayesClassifier(system_tst, system_trn)
     classifier.compute()
 
 
 class System:
 
-    def __init__(self, name):
+    def __init__(self, name, path):
         self.name = name
+        self.path = path
         self.objects = []
         self.decision_classes = defaultdict(list)
 
     def load_data(self):
-        for line in open(DATA_DIR + "/" + self.name + ".txt"):
+        for line in open(self.path):
             system_object = SystemObject(line.strip())
             self.objects.append(system_object)
             self.decision_classes[system_object.decision].append(system_object)
